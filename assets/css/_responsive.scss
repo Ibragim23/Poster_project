@@ -1,0 +1,1215 @@
+
+@media screen and (max-width: 360px) {
+
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 1;
+    
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    transform: scale(2.2);
+    cursor: pointer;
+    z-index: 2;
+    left: 28%;
+    top: 44.33%;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+   
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+    
+  }
+  
+  
+  /* контейнер меню */
+  .navbarText {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0px;
+    left: -100%;
+    width: 500px;
+    height: 100%;
+    margin: 0px;
+    padding: 80px 0px;
+    padding-top: 180px;
+    list-style: none;
+    text-align: center;
+    background-color: #d0d5d8;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 1;
+  }
+  /* элементы меню */
+  .nav-item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transform: scale(2.2);
+  }
+  
+  .nav-item:hover {
+    background-color: #CFD8DC;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .navbarText {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .navlist {
+  
+  width: 100%;
+  height: 20%;
+  margin-top: 115px;
+  }
+  
+  .logo {
+  position: absolute;
+  top: 70px;
+  left: 70%;
+  }
+  
+  .logo img {
+  
+  transform: scale(3.5);
+  }
+  
+  .logo h5 {
+  color: #2E3A59;
+  position: absolute;
+  left: 900%;
+  width: 500%;
+  transform: scale(3.2);
+  }
+  
+  .navForm {
+    position: absolute;
+    left: 210%;
+    top: 90px;
+    transform: scale(4.5);
+  }
+  
+  .searchInput {
+  position: absolute;
+  transform: scale(0.4);
+  float: right;
+  top: 16px;
+  right: -350%;
+  }
+  
+  .trydemo {
+  display: none;
+  }
+  
+  .buy {
+  font-family: 'Euclid Circular A';
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  transform: scale(4.3);
+  position: relative;
+  left: 1050%;
+  height: 40px;
+  width: 93px;
+  border-radius: 5px;
+  bottom: 40px
+  
+  }
+  
+  .buy span {
+  display: none;
+  }
+  
+  .fsposter {
+  transform: scale(1.5);
+  position: relative;;
+  right: 30%;
+  top: 207px;
+  z-index: 0;
+  color: #222B45;
+  }
+  
+  .fsposter p {
+  
+  font-family: 'Euclid Circular A';
+  height: 150px;
+  width: 368px;
+  transform: scale(2.3);
+  position: absolute;
+  left: 170%;
+  margin-top: 590px;
+  }
+  
+  .mainBtns {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  position: relative;
+  top: 1900px;
+  left: 550px;
+  z-index: 1;
+  transform: scale(4.3);
+  }
+  
+  .fsposterImage {
+  position:relative;
+  top:1507px;
+  position: absolute;
+  width: 314.12px;
+  height: 236px;
+  left: 553px;
+  transform: scale(4.0);
+  border: 6.54166px solid #FFFFFF;
+  filter: drop-shadow(0px 3.27083px 9.8125px rgba(2, 23, 44, 0.08));
+  border-radius: 6px;
+  z-index: 1;
+  }
+  
+  .fsposterdescription {
+  position: absolute;
+  width: 200%;
+  height: 636px;
+  left: 0px;
+  top: 3611px;
+  background: #FFF2F2;
+  transform: scale(3.0);
+  z-index: 1;
+  }
+  
+  .fsposterdescription p {
+  position: absolute;
+  width: 328px;
+  height: 360px;
+  left: 316px;
+  top: 105px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #222B45;
+  transform: scale(1.3);
+  }
+  
+  #svgfsposter {
+  display: none;
+  }
+  
+  #svgfsposter1 {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  left: 588px;
+  top: 533px;
+  transform: scale(1.4);
+  }
+  
+  .benefits {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  transform: scale(3.1);
+  z-index: 1;
+  position: absolute;
+  left: -211px;
+  top: 4903px;
+  }
+  
+  .benefits h6 {
+  transform: scale(1.1);
+  position: absolute;
+  left: 250px; 
+  }
+  
+  .benefits h4 {
+  position: absolute;
+  height: 44px;
+  width: 358px;
+  left: 116px;
+  text-align: center;
+  }
+  
+  .benefits p {
+  transform: scale(1.1);
+  text-align: center;
+  }
+  
+  .benefits img {
+  position: absolute;
+  width: 348px;
+  height: 191px;
+  left: 130px;
+  top: 371px;
+  transform: scale(1.1);
+  }
+  
+  .cards {
+  position: relative;
+  top: 7200px;
+  height: 1800px;
+  transform: scale(2.2);
+  z-index: 1;
+  }
+  
+  .time {
+    position: absolute;
+    top: 150px;
+    left: 410px;
+    transform: scale(2.1);
+  }
+  
+  .seo {
+  position: absolute;
+    top: 550px;
+    left: 410px;
+    transform: scale(2.1);
+  }
+  
+  .visitors {
+  position: absolute;
+    top: 1000px;
+    left: 410px;
+    transform: scale(2.1);
+  }
+  
+  .socialmedia {
+  position: absolute;
+    top: 1400px;
+    left: 410px;
+    transform: scale(2.1);
+  }
+  
+  .supports {
+  display: none;
+  }
+  
+  .measures {
+  display: none;
+  }
+  
+  .socialnetwork {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 540px;
+  top: 13672px;
+  z-index: 1;
+  position: absolute;
+  width: 360px;
+  height: 1842px;
+  background: #FFD6D9;
+  transform: scale(4.1);
+  }
+  
+  .socialnetwork h4 {
+  position: absolute;
+  width: 328px;
+  height: 64px;
+  left: 16px;
+  top: 25px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #2E3A59;
+  }
+  
+  .socialnetwork p {
+  position: absolute;
+  width: 328px;
+  height: 72px;
+  left: 16px;
+  top: 108px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #2E3A59;
+  }
+  
+  .facebook {
+  position: relative;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 220px;
+  
+  }
+  
+  .facebook p {
+  position: absolute;
+    left: 10.57%;
+    right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+  }
+  
+  .twitter {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 324px;
+  }
+  
+  .twitter p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .instagram {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 428px;
+  }
+  
+  .instagram p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .linkedin {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 532px;
+  }
+  
+  .linkedin p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .pinterest {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 636px;
+  }
+  
+  .pinterest p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .google {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 740px;
+  }
+  
+  .google p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .telegram {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 844px;
+  }
+  
+  .telegram p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .reddit {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 948px;
+  }
+  
+  .reddit p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .tumblr {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 1052px;
+  }
+  
+  .tumblr p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .medium {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 1156px;
+  }
+  
+  .medium p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .vk {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 1260px;
+  }
+  
+  .vk p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .ok {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 1364px;
+  }
+  
+  .ok p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .wordpress {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 1468px;
+  }
+  
+  .wordpress img {
+  height: 48px;
+  width: 48px;
+  left: 16px;
+  top: 16px;
+  border-radius: 24px;
+  
+  }
+  
+  .wordpress p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .plurk {
+  position: absolute;
+  width: 328px;
+  height: 96px;
+  left: 16px;
+  top: 1572px;
+  }
+  
+  .plurk p {
+  position: absolute;
+  left: 29%;
+  right: 5.71%;
+    top: 50%;
+    bottom: 21.43%;
+    text-align: left;
+  }
+  
+  .try {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 328px;
+  height: 48px;
+  left: -34px;
+  top: 1604px;
+  }
+  
+  .features {
+  width: 360px;
+  z-index: 1;
+  position: relative;
+  top: 3550px;
+  display: flex;
+  flex-direction: column;
+  transform: scale(4.1);
+  left: 540px;
+  }
+  
+  .features h4 {
+  position: absolute;
+  width: 328px;
+  height: 32px;
+  left: 16px;
+  top: 3124px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #2E3A59;
+  }
+  
+  .featuresText {
+  position: absolute;
+  width: 328px;
+  height: 48px;
+  left: 16px;
+  top: 3180px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #8F9BB3;
+  }
+  
+  .featuresImgone {
+  position: absolute;
+  width: 270px;
+  height: 224px;
+  left: 45px;
+  top: 3292px;
+  }
+  
+  .features h5 {
+  position: absolute;
+  width: 328px;
+  height: 32px;
+  left: 16px;
+  top: 3594px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #2E3A59;
+  } 
+  
+  .scheduleText {
+  position: absolute;
+  width: 328px;
+  height: 48px;
+  left: 16px;
+  top: 3654px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #8F9BB3;
+  }
+  
+  .directshareImg {
+  position: absolute;
+  width: 270px;
+  height: 224px;
+  left: 45px;
+  top: 3792px;
+  }
+  
+  .directshare {
+  position: absolute;
+  width: 328px;
+  height: 32px;
+  left: 16px;
+  top: 4094px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #2E3A59;
+  }
+  
+  .directshareText {
+  position: absolute;
+  width: 328px;
+  height: 48px;
+  left: 16px;
+  top: 4154px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #8F9BB3;
+  }
+  
+  .integratedImg {
+  position: absolute;
+  width: 270px;
+  height: 224px;
+  left: 45px;
+  top: 4292px;
+  }
+  
+  .integrated {
+  position: absolute;
+  width: 328px;
+  height: 32px;
+  left: 16px;
+  top: 4594px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #2E3A59;
+  }
+  
+  .integratedText {
+  position: absolute;
+  width: 328px;
+  height: 48px;
+  left: 16px;
+  top: 4654px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #8F9BB3;
+  }
+  
+  .seeAllFeatures {
+  position: absolute;
+  width: 213px;
+  height: 48px;
+  left: 74px;
+  top: 4874px;
+  }
+  
+  .statisticMobile {
+  display: inline-block;
+  position: absolute;
+  width: 360px;
+  height: 646px;
+  left: 520px;
+  top: 27394px;
+  z-index: 1;
+  transform: scale(4.1);
+  } 
+  
+  .statistic {
+  display: none !important;
+  }
+  
+  .worldclass {
+  position: absolute;
+  width: 328px;
+  height: 64px;
+  left: 490px;
+  top: 29304px;
+  z-index: 1;
+  transform: scale(4.1);
+  }
+  
+  .worldclass h4 {
+  position: absolute;
+  height: 64px;
+  width: 328px;
+  left: 16px;
+  top: 24px;  
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #2E3A59;
+  }
+  
+  .worldclass p {
+  position: absolute;
+  width: 328px;
+  height: 48px;
+  left: 16px;
+  top: 92px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #8F9BB3;
+  }
+  
+  .worldclass img {
+  width: 328px;
+  height: 175px;
+  position: absolute;
+  left: 16px;
+  top: 164px;
+  }
+  
+  .carouselOne {
+  position: absolute;
+  width: 360px;
+  height: 552px;
+  left: 500px;
+  top: 31995px;
+  z-index: 1;
+  display: none;
+  }
+  
+  .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  position: absolute;
+  width: 328px;
+  height: 1377px;
+  left: 456px;
+  top: 32451px;
+  transform: scale(3.5);
+  }
+  
+  .card-body h4 {
+  position: absolute;
+  width: 328px;
+  height: 64px;
+  left: 26px;
+  top: 11px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #2E3A59;
+  }
+  
+  .cardOne {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 10%;
+  bottom: 0%;
+  
+  } 
+  
+  .cardTwo {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 45%;
+  bottom: 0%;
+  }
+  
+  .cardThree {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 80%;
+  bottom: 0%;
+  }
+  
+  .card-body a {
+  position: absolute;
+  width: 127px;
+  height: 24px;
+  left: 117px;
+  top: 1564px;
+  }
+  
+  .subscribeEmail {
+  position: absolute;
+  width: 360px;
+  height: 1px;
+  left: 550px;
+  top: 36504px;
+  background: #F7F9FC;
+  z-index: 1;
+  transform: scale(3.1);
+  }
+  
+  .subscribeEmail h5 {
+  position: absolute;
+  width: 198px;
+  height: 64px;
+  left: 81px;
+  top: 2px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #2E3A59;
+  }
+  
+  .subscribeEmail form {
+  position: relative;
+  top: 10px;
+  
+  }
+  .subscribeEmail input {
+  position: absolute;
+  width: 328px;
+  height: 48px;
+  left: 16px;
+  top: 48px;
+  background: #F7F9FC;
+  /* Basic / 400 */
+  
+  border: 1px solid #E4E9F2;
+  border-radius: 8px;
+  }
+  
+  .subscribeEmail form button {
+  padding: 0px;
+  position: absolute;
+  width: 326px;
+  height: 48px;
+  left: 16px;
+  top: 120px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  }
+  
+  .askquestions {
+  z-index: 1;
+  position: absolute;
+  width: 360px;
+  height: 958px;
+  left: 200px;
+  top: 37989px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 1800;
+  font-size: 26px;
+  line-height: 24px;
+  color: #2E3A59;
+  padding-right: 10px;
+  transform: scale(2.0);
+  }
+  
+  .askquestions h4 {
+  position: absolute;
+  width: 324px;
+  left: 180px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #2E3A59;
+  transform: scale(2.1);
+  }
+  
+  .dontwait {
+  z-index: 1;
+  position: absolute;
+  width: 328px;
+  height: 557px;
+  left: 560px;
+  top: 39800px;
+  transform: scale(4.4);
+  }
+  
+  .dontwait h3 {
+  position: absolute;
+  left: 11.39%;
+  right: 10.83%;
+  top: 17.75%;
+  height: 557px;
+  width: 318px;
+  
+  
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  color: #FFFFFF;
+  }
+  
+  .dontwait p {
+  position: absolute;
+  left: 11.39%;
+  right: 10.83%;
+  top: 38.61%;
+  bottom: 10.66%;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  } 
+  
+  #trydemo {
+  height: 48px;
+  width: 280px;
+  border-radius: 8px;
+  padding: 2px 16px;
+  position: absolute;
+  left: 7.39%;
+  right: 10.83%;
+  top: 400px;
+  bottom: 9.68%;
+  color: #222B45;
+  }
+  
+  #buy {
+  position: absolute;
+  left: 7.39%;
+  right: 10.83%;
+  top: 474px;
+  bottom: 9.13%;
+  padding: 12px;
+  gap: 4px;
+  width: 280px;
+  height: 48px;
+  background: #222B45;
+  border-radius: 8px;
+  }
+  
+  .footer {
+  background: #F7F9FC;
+  position: absolute;
+  width: 360px;
+  height: 1007px;
+  left: 550px;
+  top: 42788px;
+  transform: scale(4.0);
+  }
+  
+  .privacy {
+  display: none;
+  }
+  
+  .copyright {
+  position: absolute;
+  left: 7%;
+  top: 96.03%;
+  bottom: 2.38%;
+  }
+  
+  .media-list {
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  position: absolute;
+  left: 13.33%;
+  right: 13.33%;
+  top: 87.4%;
+  bottom: 9.83%;
+  }
+  
+  .email {
+  
+  position: absolute;
+  left: 24.72%;
+  right: 24.72%;
+  top: 79.09%;
+  bottom: 19.36%;
+  }
+  
+  .contact  > h6 {
+  position: absolute;
+  left: 38.89%;
+  right: 38.89%;
+  top: 74.09%;
+  bottom: 24.13%;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 38px;
+  color: #2E3A59;
+  }
+  
+  .product  {
+  position: absolute;
+  right: 79%;
+  top: 44.27%;
+  bottom: 30.88%;
+  text-align: center;
+  }
+  
+  .company {
+  position: absolute;
+  text-align: center;
+  right: 75%;
+  top: 21.45%;
+  bottom: 56.7%;
+  }
+  
+  .logoDescription {
+  position: absolute;
+  left: 4.44%;
+  right: 4.44%;
+  top: 15.71%;
+  bottom: 82.52%;
+  
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  height: 48px;
+  width: 310px;
+  
+  color: #2E3A59;
+  }
+  
+  #footerLogo > img {
+  position: absolute;
+  left:105px;
+  height: 39.99999237060547px;
+  width: 29.090904235839844px;
+  transform: scale(1.5);
+  }
+  
+  #footerLogo > h5 {
+  transform: scale(1.6);
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21.8182px;
+  line-height: 29px;
+  color: #2E3A59;
+  text-align: left;
+  }
+  
+  #footerLogo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap:0px;
+  height: 39.99999237060547px;
+  width: 20px;
+  left: 4.56%;
+  right: 30.56%;
+  top: 5.56%;
+  bottom: 90.47%;
+  }
+  
+  
+  }
+

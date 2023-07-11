@@ -1,0 +1,36 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+  }
+
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+@mixin cards {
+  div { 
+  h6 {
+      font-family: $font-stack;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: #2E3A59;
+    }
+  p {
+      font-family: $font-stack;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #2E3A59;
+    }
+    img {
+      margin: 1em;
+    }
+}
+}

@@ -1,0 +1,4273 @@
+@import './footer';
+@import './header';
+@import './mixin';
+@import './responsive';
+@import './variables';
+
+
+
+@font-face {
+font-family: "Euclid Circular A Bold";
+src: url("./fonts/Euclid.ttf");
+font-style: normal;
+font-weight: normal;
+}
+
+
+
+@font-face {
+  font-family: "Euclid Circular A Bold";
+  src: url("./fonts/Euclid.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  top: 32px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 1em;
+}
+
+.navbarText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 48px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-link {
+  color: #222B45;
+  font-family: "Euclid Circular A Bold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.searchBtn {
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+  border: none;
+  background-color: white;
+}
+
+.searchInput {
+  display: none;
+}
+
+.navForm:hover > .searchInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  float: left;
+}
+
+.navBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  gap: 8px;
+  bottom: 10px;
+}
+
+.trydemo {
+  height: 40px;
+  width: 113px;
+  border-radius: 5px;
+  background-color: white;
+  color: #222B45;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  border: none;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.buy {
+  height: 40px;
+  width: 155px;
+  border-radius: 5px;
+  background-color: #FF3D71;
+  color: white;
+  border: none;
+  font-family: "Euclid Circular A Bold";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  font-style: normal;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fsposter {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  margin-left: 220px;
+  margin-top: 100px;
+}
+
+.fsposter h2 {
+  font-family: "Euclid Circular A Bold";
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 800px;
+  height: 144px;
+}
+
+.fsposter h2 span {
+  color: #FF3D71;
+}
+
+.fsposter p {
+  width: 800px;
+  height: 48px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #8F9BB3;
+}
+
+.mainBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 55px;
+}
+
+.tryrightnow {
+  width: 199px;
+  height: 48px;
+  border: none;
+  background: #0095FF;
+  border-radius: 8px;
+  color: white;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.watchvideo {
+  background-color: white;
+  border: 1px solid #0095FF;
+  border-radius: 8px;
+  width: 184px;
+  height: 48px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0095FF;
+}
+
+.fsposterImage {
+  position: absolute;
+  width: 768px;
+  height: 577px;
+  left: 240px;
+  top: 580px;
+  width: 768px;
+  height: 577px;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.fsposterdescription {
+  position: absolute;
+  width: 100%;
+  height: 496px;
+  left: 0px;
+  top: 1018px;
+  z-index: 0;
+  background: #FFF2F2;
+}
+
+.fsposterdescription p {
+  position: absolute;
+  width: 800px;
+  height: 160px;
+  left: 220px;
+  top: 174px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #222B45;
+}
+
+#svgfsposter1 {
+  position: absolute;
+  width: 72px;
+  height: 75.88px;
+  left: 1110px;
+  top: 380px;
+}
+
+#svgfsposter {
+  position: absolute;
+  width: 208px;
+  height: 150.7px;
+  left: 206px;
+  top: 330px;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: 1080px;
+}
+
+.benefits h6 {
+  position: absolute;
+  width: 79px;
+  height: 28px;
+  left: 112px;
+  top: 65px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #0095FF;
+}
+
+.benefits h4 {
+  position: absolute;
+  width: 384px;
+  height: 80px;
+  left: 112px;
+  top: 117px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  color: #2E3A59;
+}
+
+.benefits p {
+  position: absolute;
+  width: 384px;
+  height: 72px;
+  left: 112px;
+  top: 211px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8F9BB3;
+}
+
+.cards {
+  position: relative;
+  top: 1100px;
+  padding: 22em;
+}
+.cards div h6 {
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #2E3A59;
+}
+.cards div p {
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #2E3A59;
+}
+.cards div img {
+  margin: 1em;
+}
+
+.time {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 200px;
+  left: 16%;
+  text-align: center;
+}
+
+.seo {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 200px;
+  left: 40%;
+  text-align: center;
+}
+
+.visitors {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 200px;
+  left: 64%;
+  text-align: center;
+}
+
+.socialmedia {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 450px;
+  left: 16%;
+  text-align: center;
+}
+
+.supports {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 450px;
+  left: 40%;
+  text-align: center;
+}
+
+.measures {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 450px;
+  left: 64%;
+  text-align: center;
+}
+
+.socialnetwork {
+  position: relative;
+  width: 100%;
+  height: 944px;
+  top: 1034px;
+  background-color: #ffd6d9;
+}
+
+.socialnetwork h4 {
+  position: relative;
+  width: 696px;
+  height: 40px;
+  left: 112px;
+  top: 152px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  color: #2E3A59;
+}
+
+.socialnetwork p {
+  position: relative;
+  width: 488px;
+  height: 48px;
+  left: 112px;
+  top: 176px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+}
+
+.socialnetwork form {
+  position: absolute;
+  width: 199px;
+  height: 48px;
+  right: 112px;
+  top: 120px;
+}
+
+.facebook {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 4%;
+  bottom: 52%;
+}
+
+.facebook img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.facebook h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.facebook p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.twitter {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 27.3%;
+  bottom: 52%;
+}
+
+.twitter img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.twitter h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.twitter p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.instagram {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 50.5%;
+  bottom: 52%;
+}
+
+.instagram img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.instagram h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.instagram p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.linkedin {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  right: 4%;
+  bottom: 52%;
+}
+
+.linkedin img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.linkedin h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.linkedin p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.google {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 4%;
+  bottom: 38%;
+}
+
+.google img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.google h6 {
+  position: absolute;
+  left: 28.57%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.google p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.telegram {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 27.3%;
+  bottom: 38%;
+}
+
+.telegram img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.telegram h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.telegram p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.reddit {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 50.5%;
+  bottom: 38%;
+}
+
+.reddit img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.reddit h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.reddit p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.pinterest {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  right: 4%;
+  bottom: 24%;
+}
+
+.pinterest img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.pinterest h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.pinterest p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.tumblr {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 4%;
+  bottom: 24%;
+}
+
+.tumblr img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.tumblr h6 {
+  position: absolute;
+  left: 28.57%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.tumblr p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.medium {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 27.3%;
+  bottom: 24%;
+}
+
+.medium img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.medium h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.medium p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.vk {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 50.5%;
+  bottom: 24%;
+}
+
+.vk img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.vk h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.vk p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.ok {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  right: 4%;
+  bottom: 38%;
+}
+
+.ok img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.ok h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.ok p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.plurk {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 27.3%;
+  bottom: 10%;
+}
+
+.plurk img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.plurk h6 {
+  position: absolute;
+  left: 28.57%;
+  right: 37.86%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.plurk p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.wordpress {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  width: 280px;
+  height: 112px;
+  left: 4%;
+  bottom: 10%;
+}
+
+.wordpress img {
+  position: absolute;
+  left: 5.71%;
+  right: 77.14%;
+  top: 14.29%;
+  bottom: 42.86%;
+}
+
+.wordpress h6 {
+  position: absolute;
+  left: 28.57%;
+  top: 17.86%;
+  bottom: 57.14%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+}
+
+.wordpress p {
+  position: absolute;
+  left: 28.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2E3A59;
+  height: 32px;
+  width: 184px;
+}
+
+.features h4 {
+  position: absolute;
+  width: 348px;
+  height: 40px;
+  left: 456px;
+  top: 3574px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  color: #2E3A59;
+}
+
+.featuresText {
+  position: absolute;
+  width: 384px;
+  height: 48px;
+  left: 428px;
+  top: 3638px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #8F9BB3;
+}
+
+.featuresImgone {
+  position: absolute;
+  width: 384px;
+  height: 320px;
+  left: 216px;
+  top: 3782px;
+}
+
+.features h5 {
+  position: absolute;
+  left: 736px;
+  top: 3838px;
+  width: 384px;
+  height: 32px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2E3A59;
+}
+
+.scheduleText {
+  position: absolute;
+  left: 736px;
+  top: 3908px;
+  width: 384px;
+  height: 72px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+}
+
+.directshare {
+  position: absolute;
+  left: 300px;
+  top: 4300px;
+  width: 384px;
+  height: 32px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2E3A59;
+}
+
+.directshareText {
+  position: absolute;
+  width: 384px;
+  height: 120px;
+  left: 300px;
+  top: 4354px;
+  font-family: "Euclid Circular A Bold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2E3A59;
+}
+
+.directshareImg {
+  position: absolute;
+  width: 384px;
+  height: 320px;
+  right: 200px;
+  top: 4198px;
+}
+
+.integrated {
+  position: absolute;
+  width: 384px;
+  height: 144px;
+  left: 736px;
+  top: 4670px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2E3A59;
+}
+
+.integratedText {
+  position: absolute;
+  width: 384px;
+  height: 144px;
+  left: 736px;
+  top: 4724px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+}
+
+.integratedImg {
+  position: absolute;
+  width: 384px;
+  height: 320px;
+  left: 216px;
+  top: 4614px;
+}
+
+.seeAllFeatures {
+  position: absolute;
+  width: 213px;
+  height: 48px;
+  left: 513px;
+  top: 5046px;
+  width: 213px;
+  height: 48px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  color: #FFFFFF;
+  background: #0095FF;
+  border-radius: 8px;
+}
+
+.statistic {
+  position: absolute;
+  width: 100%;
+  height: 270px;
+  left: 0px;
+  top: 5238px;
+}
+
+.worldclass {
+  position: absolute;
+  width: 800px;
+  height: 596px;
+  left: 320px;
+  top: 5674px;
+}
+
+.worldclass h4 {
+  width: 591px;
+  height: 40px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  color: #2E3A59;
+}
+
+.worldclass p {
+  position: relative;
+  left: 13%;
+  width: 384px;
+  height: 48px;
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #8F9BB3;
+}
+
+.worldclass img {
+  position: absolute;
+  width: 800px;
+  height: 428px;
+  left: -6em;
+  top: 156px;
+}
+
+.carouselOne {
+  position: absolute;
+  left: 0px;
+  top: 6322px;
+}
+
+.carouselContent h5 {
+  position: relative;
+  left: 140px;
+  top: -60px;
+  width: 591px;
+  height: 80px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  color: #2E3A59;
+}
+
+.carouselContent p {
+  position: relative;
+  left: 140px;
+  top: -40px;
+  height: 96px;
+  width: 592px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #2E3A59;
+}
+
+.carouselContent img {
+  width: 232px;
+  height: 56px;
+}
+
+.card-body {
+  position: relative;
+  width: 90%;
+  height: 512px;
+  top: 4370px;
+}
+
+.card-body h4 {
+  position: absolute;
+  width: 549px;
+  height: 40px;
+  left: 112px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  color: #2E3A59;
+}
+
+.card-body a {
+  position: absolute;
+  left: 90%;
+  width: 121px;
+  height: 24px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3366FF;
+}
+
+.cardOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  width: 384px;
+  height: 416px;
+  top: 90px;
+  left: 44px;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 8px;
+}
+
+.cardImg {
+  width: 368px;
+  height: 240px;
+}
+
+.cardH6 {
+  width: 352px;
+  height: 56px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.card-content {
+  position: absolute;
+  top: 350px;
+  right: 133px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 0px 0px;
+  gap: 16px;
+}
+
+#wordpress {
+  width: 102px;
+  height: 32px;
+}
+
+#date {
+  width: 116px;
+  padding: 6px 6px;
+  height: 32px;
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  border: 1px solid #C5CEE0;
+  border-radius: 4px;
+}
+
+.cardTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  width: 384px;
+  height: 416px;
+  top: 90px;
+  left: 435px;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 8px;
+}
+
+.cardThree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  width: 384px;
+  height: 416px;
+  top: 90px;
+  left: 834px;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 8px;
+}
+
+.subscribeEmail {
+  position: absolute;
+  width: 592px;
+  height: 120px;
+  left: 424px;
+  top: 7451px;
+}
+
+.subscribeEmail h5 {
+  width: 342px;
+  height: 32px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2E3A59;
+}
+
+.subscribeEmail form {
+  margin-top: 40px;
+  width: 592px;
+  height: 48px;
+}
+
+.subscribeEmail input {
+  width: 408px;
+  height: 48px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8F9BB3;
+}
+
+.subscribeEmail button {
+  width: 176px;
+  height: 48px;
+  padding: 12px;
+  width: 176px;
+  height: 48px;
+  border: none;
+  background: #3366FF;
+  border-radius: 8px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.askquestions {
+  position: relative;
+  width: 800px;
+  height: 844px;
+  left: 320px;
+  top: 4792px;
+}
+
+.askquestions span {
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+}
+
+.askquestions h4 {
+  position: absolute;
+  width: 591px;
+  height: 40px;
+  top: -80px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  color: #2E3A59;
+}
+
+.answerTwo {
+  display: none;
+}
+
+.askquestions div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
+  height: 65px;
+  border-bottom: 1px solid #E5E5E5;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.questionTwo:hover + .answerTwo {
+  display: inline-block;
+}
+
+#img {
+  height: 16px;
+  width: 16px;
+  min-width: 16px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.questionTwo:hover #img {
+  transform: rotateZ(40deg);
+}
+
+.askquestions p {
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  margin-right: 200px;
+}
+
+.dontwait {
+  position: relative;
+  width: 85%;
+  height: 290px;
+  left: 102px;
+  top: 4532px;
+  background-color: #FF708D;
+}
+
+.dontwait h3 {
+  position: absolute;
+  width: 499px;
+  height: 64px;
+  left: 5.26%;
+  right: 54.11%;
+  top: 20%;
+  bottom: 53.33%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: #FFFFFF;
+}
+
+.dontwait p {
+  position: absolute;
+  left: 5.26%;
+  right: 51.32%;
+  top: 53.33%;
+  bottom: 26.67%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+#trydemo {
+  position: absolute;
+  left: 57%;
+  right: 21.55%;
+  top: 140px;
+  height: 44px;
+  width: 164px;
+  border: none;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #222B45;
+  border-radius: 8px;
+}
+
+#buy {
+  position: absolute;
+  left: 75%;
+  top: 140px;
+  height: 44px;
+  width: 164px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #222B45;
+  border-radius: 8px;
+  border: none;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 4650px;
+  bottom: -0.25%;
+  background: #F7F9FC;
+  height: 404px;
+  }
+
+  .fsPosterfooter {
+    display: flex;
+    flex-direction:column;
+    align-content: space-evenly;
+    gap: 15px;
+}
+
+.fsPosterfooter > .logo {
+position: absolute;
+left: 7.78%;
+top: 14.14%;
+bottom: 74.94%;
+font-family: "Euclid Circular A Bold";
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+color: #2E3A59;
+height: 44px;
+width: 174px;
+}
+
+.logoDescription {
+position: absolute;
+left: 7.78%;
+right: 77.78%;
+top: 33%;
+bottom: 49.13%;
+font-family: "Euclid Circular A Bold";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #2E3A59;
+}
+
+
+.copyright {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-self: center;
+padding: 0px;
+gap: 8px;
+position: absolute;
+left: 7.78%;
+top: 88.83%;
+height: 24px;
+font-family: "Euclid Circular A Bold";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #2E3A59;
+}
+
+.company-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+left: 29.44%;
+top: 15.63%;
+
+  list-style-type: none;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+}
+
+.company-list h6 {
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+
+}
+
+.company-list a {
+  text-decoration: none;
+  color: #2E3A59;
+
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  left: 49.11%;
+  top: 15.63%;
+  bottom: 25.81%;
+  list-style-type: none;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+}
+
+.product-list h6 {
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+
+}
+
+.product-list a {
+  text-decoration: none;
+  color: #2E3A59;
+
+}
+
+.contact h6 {
+position: absolute;
+left: 68.78%;
+right: 21.67%;
+top: 15.63%;
+bottom: 77.42%;
+font-family: "Euclid Circular A Bold";
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+position: absolute;
+left: 68.78%;
+top: 41.54%;
+bottom: 65.51%;
+font-family: "Euclid Circular A Bold";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #2E3A59;
+}
+
+.email > img {
+height: 24px;
+width: 24px;
+border-radius: 0px;
+}
+
+.media-list {
+  position: absolute;
+  left: 67.78%;
+  top: 58.4%;
+}
+
+.privacy {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5em;
+  position: absolute;
+  height: 24px;
+  left: 860px;
+  top: 355px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+}
+
+
+.mainfeatures {
+  margin-top: 40px;
+  background-color: #f3f3f3;
+  
+}
+
+
+.featurescontent h4 {
+position: absolute;
+width: 143px;
+height: 40px;
+left: 45%;
+top: 145px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 34px;
+line-height: 40px;
+color: #2E3A59;
+}
+
+.featurescontent p {
+position: absolute;
+width: 268px;
+height: 28px;
+left: 40%;
+top: 209px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #2E3A59;
+text-align: center;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 36px;
+  position: relative;
+  width: 91%;
+  height: 2344px;
+  left: 30px;
+  top: 200px;
+}
+
+.featuresRowOne {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+width: 90%;
+height: 244px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+.autoPost {
+  width: 384px;
+  height: 244px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #FFFFFF;
+box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+border-radius: 16px;
+  padding: 22px;
+}
+
+.autoPost img {
+  margin-bottom: 16px;
+}
+
+.autoPost h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.autoPost div {
+width: 320px;
+height: 60px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #2E3A59;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.schedule {
+  width: 384px;
+  height: 244px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  background: #FFFFFF;
+box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+border-radius: 16px;
+padding: 22px;
+}
+
+.schedule img {
+  margin-bottom: 16px;
+}
+
+.schedule h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #0095FF;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.schedule div {
+  width: 320px;
+height: 60px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #2E3A59;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.directpanel {
+  width: 384px;
+height: 244px;
+flex: none;
+order: 2;
+flex-grow: 0;
+background: #FFFFFF;
+box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+border-radius: 16px;
+padding: 22px;
+}
+
+.directpanel img {
+  margin-bottom: 16px;
+}
+
+.directpanel h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.directpanel div {
+  width: 320px;
+height: 60px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #2E3A59;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+.featuresRowTwo {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+width: 90%;
+height: 244px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-top: 25px;
+}
+
+.custom {
+width: 384px;
+height: 244px;
+background: #FFFFFF;
+box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+border-radius: 16px;
+flex: none;
+order: 0;
+flex-grow: 0;
+padding: 22px;
+}
+
+.custom img {
+  margin-bottom: 16px;
+}
+
+.custom h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.custom div {
+  width: 320px;
+height: 40px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #2E3A59;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.posting {
+  width: 384px;
+height: 244px;
+background: #FFFFFF;
+box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+border-radius: 16px;
+flex: none;
+order: 1;
+flex-grow: 0;
+padding: 22px;
+}
+
+.posting img {
+  margin-bottom: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.posting h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.posting div {
+  width: 320px;
+height: 40px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #2E3A59;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.shorteners {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.shorteners img {
+  margin-bottom: 16px;
+}
+
+.shorteners h6 {
+  width: 320px;
+  height: 28px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.shorteners div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.featuresRowThree {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+width: 90%;
+height: 244px;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-top: 25px;
+}
+
+.areintegtated {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.areintegtated img {
+  margin-bottom: 16px;
+}
+
+.areintegtated h6 {
+  width: 320px;
+  height: 28px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.areintegtated div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.configure {
+    width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.configure img {
+  margin-bottom: 16px;
+}
+
+.configure h6 {
+  width: 320px;
+  height: 28px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.configure div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 35px;
+}
+
+.insights {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.insights img {
+  margin-bottom: 16px;
+}
+
+.insights h6 {
+  width: 320px;
+  height: 28px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.insights div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 35px;
+}
+
+.featuresRowFour {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 90%;
+  height: 244px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 25px;
+}
+
+.logs {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.logs img {
+  margin-bottom: 16px;
+}
+
+.logs h6 {
+  width: 320px;
+  height: 28px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.logs div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.messages {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.messages img {
+  margin-bottom: 16px;
+} 
+
+.messages h6 {
+  width: 320px;
+  height: 28px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.messages div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.yourPost {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.yourPost img {
+  margin-bottom: 16px;
+}
+
+.yourPost h6 {
+  width: 320px;
+  height: 28px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.yourPost div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.featuresRowFive {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 90%;
+  height: 244px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 25px;
+}
+
+.filterAuto {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.filterAuto img {
+  margin-bottom: 16px;
+}
+
+.filterAuto h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.filterAuto div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} 
+
+
+.bulk {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.bulk img {
+  margin-bottom: 16px;
+}
+
+.bulk h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.bulk div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} 
+
+.calendar {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.calendar img {
+  margin-bottom: 16px;
+}
+
+.calendar h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.calendar div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} 
+
+.featuresRowSix {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 90%;
+  height: 244px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 25px;
+}
+
+.hashtages {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.hashtages img {
+  margin-bottom: 16px;
+}
+
+.hashtages h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.hashtages div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} 
+
+.proxy {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.proxy img {
+  margin-bottom: 16px;
+}
+
+.proxy h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.proxy div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} 
+
+.emoji {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.emoji img {
+  margin-bottom: 16px;
+}
+
+.emoji h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.emoji div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} 
+
+.featuresRowSeven {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 90%;
+  height: 244px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 25px;
+}
+
+.track {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.track img {
+  margin-bottom: 16px;
+}
+
+.track h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.track div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} 
+
+.multisite {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.multisite img {
+  margin-bottom: 16px;
+}
+
+.multisite h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.multisite div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} 
+
+.translation {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.translation img {
+  margin-bottom: 16px;
+}
+
+.translation h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.translation div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} 
+
+.featuresRowEight {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 90%;
+  height: 244px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 25px;
+}
+
+.rtl {
+  width: 384px;
+  height: 244px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(118, 127, 154, 0.08);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 22px;
+}
+
+.rtl img {
+  margin-bottom: 16px;
+}
+
+.rtl h6 {
+  width: 320px;
+height: 28px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #2E3A59;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.rtl div {
+  width: 320px;
+  height: 40px;
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+} 
+
+.dontwaitFeatures {
+  position: relative;
+  width: 85%;
+  height: 290px;
+  left: 102px;
+  top: 322px;
+  background-color: #FF708D;
+}
+
+.dontwaitFeatures h3 {
+  position: absolute;
+  width: 499px;
+  height: 64px;
+  left: 5.26%;
+  right: 54.11%;
+  top: 20%;
+  bottom: 53.33%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: #FFFFFF;
+}
+
+.dontwaitFeatures p {
+  position: absolute;
+  left: 5.26%;
+  right: 51.32%;
+  top: 53.33%;
+  bottom: 26.67%;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+
+.footerFeatures {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 405px;
+  bottom: -0.25%;
+  background: #F7F9FC;
+  height: 410px;
+  }
+
+
+/* FAQ */
+
+.mainFAQ h4 {
+  position: absolute;
+width: 70px;
+height: 40px;
+left: 585px;
+top: 135px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 34px;
+line-height: 40px;
+text-align: center;
+color: #2E3A59;
+}
+
+.askquestionsFAQ {
+  position: relative;
+  width: 800px;
+  height: 844px;
+  left: 320px;
+  top: 162px;
+}
+
+
+.askquestionsFAQ span {
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+}
+
+.askquestionsFAQ h4 {
+  position: absolute;
+  width: 591px;
+  height: 40px;
+  top: -80px;
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  color: #2E3A59;
+}
+
+.askquestionsFAQ div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
+  height: 65px;
+  border-bottom: 1px solid #E5E5E5;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.askquestionsFAQ p {
+  font-family: "Euclid Circular A Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  margin-right: 200px;
+}
+
+.dontwaitFAQ {
+  position: absolute;
+  top:810px
+}
+
+.footerFAQ {
+  position: absolute;
+  top: 1190px;
+}
+
+.statisticMobile {
+  display: none;
+}
+
+#menu__toggle {
+display: none;
+}
+
+.try {
+width: 199px;
+height: 48px;
+border: none;
+background: #0095FF;
+border-radius: 8px;
+color: white;
+font-family: "Euclid Circular A Bold";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+}
+
+@media screen and (max-width:360px) {
+
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 1;
+  
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  transform: scale(2.2);
+  cursor: pointer;
+  z-index: 2;
+  left: 28%;
+  top: 44.33%;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+ 
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+  
+}
+
+
+/* контейнер меню */
+.navbarText {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0px;
+  left: -100%;
+  width: 500px;
+  height: 100%;
+  margin: 0px;
+  padding: 80px 0px;
+  padding-top: 180px;
+  list-style: none;
+  text-align: center;
+  background-color: #d0d5d8;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  z-index: 1;
+}
+/* элементы меню */
+.nav-item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transform: scale(2.2);
+}
+
+.nav-item:hover {
+  background-color: #CFD8DC;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+  
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .navbarText {
+  visibility: visible;
+  left: 0;
+}
+
+.navlist {
+
+width: 100%;
+height: 20%;
+margin-top: 115px;
+}
+
+.logo {
+position: absolute;
+top: 70px;
+left: 70%;
+}
+
+.logo img {
+
+transform: scale(3.5);
+}
+
+.logo h5 {
+color: #2E3A59;
+position: absolute;
+left: 900%;
+width: 500%;
+transform: scale(3.2);
+}
+
+.navForm {
+  position: absolute;
+  left: 210%;
+  top: 90px;
+  transform: scale(4.5);
+}
+
+.searchInput {
+position: absolute;
+transform: scale(0.4);
+float: right;
+top: 16px;
+right: -350%;
+}
+
+.trydemo {
+display: none;
+}
+
+.buy {
+font-family: 'Euclid Circular A';
+font-size: 14px;
+font-weight: 800;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: center;
+transform: scale(4.3);
+position: relative;
+left: 1050%;
+height: 40px;
+width: 93px;
+border-radius: 5px;
+bottom: 40px
+
+}
+
+.buy span {
+display: none;
+}
+
+.fsposter {
+transform: scale(1.5);
+position: relative;;
+right: 30%;
+top: 207px;
+z-index: 0;
+color: #222B45;
+}
+
+.fsposter p {
+
+font-family: 'Euclid Circular A';
+height: 150px;
+width: 368px;
+transform: scale(2.3);
+position: absolute;
+left: 170%;
+margin-top: 590px;
+}
+
+.mainBtns {
+display: flex;
+flex-direction: column;
+align-items:center;
+position: relative;
+top: 1900px;
+left: 550px;
+z-index: 1;
+transform: scale(4.3);
+}
+
+.fsposterImage {
+position:relative;
+top:1507px;
+position: absolute;
+width: 314.12px;
+height: 236px;
+left: 553px;
+transform: scale(4.0);
+border: 6.54166px solid #FFFFFF;
+filter: drop-shadow(0px 3.27083px 9.8125px rgba(2, 23, 44, 0.08));
+border-radius: 6px;
+z-index: 1;
+}
+
+.fsposterdescription {
+position: absolute;
+width: 200%;
+height: 636px;
+left: 0px;
+top: 3611px;
+background: #FFF2F2;
+transform: scale(3.0);
+z-index: 1;
+}
+
+.fsposterdescription p {
+position: absolute;
+width: 328px;
+height: 360px;
+left: 316px;
+top: 105px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 40px;
+text-align: center;
+color: #222B45;
+transform: scale(1.3);
+}
+
+#svgfsposter {
+display: none;
+}
+
+#svgfsposter1 {
+position: absolute;
+width: 72px;
+height: 72px;
+left: 588px;
+top: 533px;
+transform: scale(1.4);
+}
+
+.benefits {
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+transform: scale(3.1);
+z-index: 1;
+position: absolute;
+left: -211px;
+top: 4903px;
+}
+
+.benefits h6 {
+transform: scale(1.1);
+position: absolute;
+left: 250px; 
+}
+
+.benefits h4 {
+position: absolute;
+height: 44px;
+width: 358px;
+left: 116px;
+text-align: center;
+}
+
+.benefits p {
+transform: scale(1.1);
+text-align: center;
+}
+
+.benefits img {
+position: absolute;
+width: 348px;
+height: 191px;
+left: 130px;
+top: 371px;
+transform: scale(1.1);
+}
+
+.cards {
+position: relative;
+top: 7200px;
+height: 1800px;
+transform: scale(2.2);
+z-index: 1;
+}
+
+.time {
+  position: absolute;
+  top: 150px;
+  left: 410px;
+  transform: scale(2.1);
+}
+
+.seo {
+position: absolute;
+  top: 550px;
+  left: 410px;
+  transform: scale(2.1);
+}
+
+.visitors {
+position: absolute;
+  top: 1000px;
+  left: 410px;
+  transform: scale(2.1);
+}
+
+.socialmedia {
+position: absolute;
+  top: 1400px;
+  left: 410px;
+  transform: scale(2.1);
+}
+
+.supports {
+display: none;
+}
+
+.measures {
+display: none;
+}
+
+.socialnetwork {
+display: flex;
+flex-direction: column;
+position: relative;
+left: 540px;
+top: 13672px;
+z-index: 1;
+position: absolute;
+width: 360px;
+height: 1842px;
+background: #FFD6D9;
+transform: scale(4.1);
+}
+
+.socialnetwork h4 {
+position: absolute;
+width: 328px;
+height: 64px;
+left: 16px;
+top: 25px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #2E3A59;
+}
+
+.socialnetwork p {
+position: absolute;
+width: 328px;
+height: 72px;
+left: 16px;
+top: 108px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #2E3A59;
+}
+
+.facebook {
+position: relative;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 220px;
+
+}
+
+.facebook p {
+position: absolute;
+  left: 10.57%;
+  right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+}
+
+.twitter {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 324px;
+}
+
+.twitter p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.instagram {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 428px;
+}
+
+.instagram p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.linkedin {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 532px;
+}
+
+.linkedin p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.pinterest {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 636px;
+}
+
+.pinterest p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.google {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 740px;
+}
+
+.google p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.telegram {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 844px;
+}
+
+.telegram p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.reddit {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 948px;
+}
+
+.reddit p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.tumblr {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 1052px;
+}
+
+.tumblr p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.medium {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 1156px;
+}
+
+.medium p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.vk {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 1260px;
+}
+
+.vk p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.ok {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 1364px;
+}
+
+.ok p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.wordpress {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 1468px;
+}
+
+.wordpress img {
+height: 48px;
+width: 48px;
+left: 16px;
+top: 16px;
+border-radius: 24px;
+
+}
+
+.wordpress p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.plurk {
+position: absolute;
+width: 328px;
+height: 96px;
+left: 16px;
+top: 1572px;
+}
+
+.plurk p {
+position: absolute;
+left: 29%;
+right: 5.71%;
+  top: 50%;
+  bottom: 21.43%;
+  text-align: left;
+}
+
+.try {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 328px;
+height: 48px;
+left: -34px;
+top: 1604px;
+}
+
+.features {
+width: 360px;
+z-index: 1;
+position: relative;
+top: 3550px;
+display: flex;
+flex-direction: column;
+transform: scale(4.1);
+left: 540px;
+}
+
+.features h4 {
+position: absolute;
+width: 328px;
+height: 32px;
+left: 16px;
+top: 3124px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #2E3A59;
+}
+
+.featuresText {
+position: absolute;
+width: 328px;
+height: 48px;
+left: 16px;
+top: 3180px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #8F9BB3;
+}
+
+.featuresImgone {
+position: absolute;
+width: 270px;
+height: 224px;
+left: 45px;
+top: 3292px;
+}
+
+.features h5 {
+position: absolute;
+width: 328px;
+height: 32px;
+left: 16px;
+top: 3594px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #2E3A59;
+} 
+
+.scheduleText {
+position: absolute;
+width: 328px;
+height: 48px;
+left: 16px;
+top: 3654px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #8F9BB3;
+}
+
+.directshareImg {
+position: absolute;
+width: 270px;
+height: 224px;
+left: 45px;
+top: 3792px;
+}
+
+.directshare {
+position: absolute;
+width: 328px;
+height: 32px;
+left: 16px;
+top: 4094px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #2E3A59;
+}
+
+.directshareText {
+position: absolute;
+width: 328px;
+height: 48px;
+left: 16px;
+top: 4154px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #8F9BB3;
+}
+
+.integratedImg {
+position: absolute;
+width: 270px;
+height: 224px;
+left: 45px;
+top: 4292px;
+}
+
+.integrated {
+position: absolute;
+width: 328px;
+height: 32px;
+left: 16px;
+top: 4594px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #2E3A59;
+}
+
+.integratedText {
+position: absolute;
+width: 328px;
+height: 48px;
+left: 16px;
+top: 4654px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #8F9BB3;
+}
+
+.seeAllFeatures {
+position: absolute;
+width: 213px;
+height: 48px;
+left: 74px;
+top: 4874px;
+}
+
+.statisticMobile {
+display: inline-block;
+position: absolute;
+width: 360px;
+height: 646px;
+left: 520px;
+top: 27394px;
+z-index: 1;
+transform: scale(4.1);
+} 
+
+.statistic {
+display: none !important;
+}
+
+.worldclass {
+position: absolute;
+width: 328px;
+height: 64px;
+left: 490px;
+top: 29304px;
+z-index: 1;
+transform: scale(4.1);
+}
+
+.worldclass h4 {
+position: absolute;
+height: 64px;
+width: 328px;
+left: 16px;
+top: 24px;  
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #2E3A59;
+}
+
+.worldclass p {
+position: absolute;
+width: 328px;
+height: 48px;
+left: 16px;
+top: 92px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #8F9BB3;
+}
+
+.worldclass img {
+width: 328px;
+height: 175px;
+position: absolute;
+left: 16px;
+top: 164px;
+}
+
+.carouselOne {
+position: absolute;
+width: 360px;
+height: 552px;
+left: 500px;
+top: 31995px;
+z-index: 1;
+display: none;
+}
+
+.card-body {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+position: absolute;
+width: 328px;
+height: 1377px;
+left: 456px;
+top: 32451px;
+transform: scale(3.5);
+}
+
+.card-body h4 {
+position: absolute;
+width: 328px;
+height: 64px;
+left: 26px;
+top: 11px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #2E3A59;
+}
+
+.cardOne {
+position: absolute;
+left: 0%;
+right: 0%;
+top: 10%;
+bottom: 0%;
+
+} 
+
+.cardTwo {
+position: absolute;
+left: 0%;
+right: 0%;
+top: 45%;
+bottom: 0%;
+}
+
+.cardThree {
+position: absolute;
+left: 0%;
+right: 0%;
+top: 80%;
+bottom: 0%;
+}
+
+.card-body a {
+position: absolute;
+width: 127px;
+height: 24px;
+left: 117px;
+top: 1564px;
+}
+
+.subscribeEmail {
+position: absolute;
+width: 360px;
+height: 1px;
+left: 550px;
+top: 36504px;
+background: #F7F9FC;
+z-index: 1;
+transform: scale(3.1);
+}
+
+.subscribeEmail h5 {
+position: absolute;
+width: 198px;
+height: 64px;
+left: 81px;
+top: 2px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #2E3A59;
+}
+
+.subscribeEmail form {
+position: relative;
+top: 10px;
+
+}
+.subscribeEmail input {
+position: absolute;
+width: 328px;
+height: 48px;
+left: 16px;
+top: 48px;
+background: #F7F9FC;
+/* Basic / 400 */
+
+border: 1px solid #E4E9F2;
+border-radius: 8px;
+}
+
+.subscribeEmail form button {
+padding: 0px;
+position: absolute;
+width: 326px;
+height: 48px;
+left: 16px;
+top: 120px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.askquestions {
+z-index: 1;
+position: absolute;
+width: 360px;
+height: 958px;
+left: 200px;
+top: 37989px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 1800;
+font-size: 26px;
+line-height: 24px;
+color: #2E3A59;
+padding-right: 10px;
+transform: scale(2.0);
+}
+
+.askquestions h4 {
+position: absolute;
+width: 324px;
+left: 180px;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #2E3A59;
+transform: scale(2.1);
+}
+
+.dontwait {
+z-index: 1;
+position: absolute;
+width: 328px;
+height: 557px;
+left: 560px;
+top: 39800px;
+transform: scale(4.4);
+}
+
+.dontwait h3 {
+position: absolute;
+left: 11.39%;
+right: 10.83%;
+top: 17.75%;
+height: 557px;
+width: 318px;
+
+
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 600;
+font-size: 34px;
+line-height: 40px;
+color: #FFFFFF;
+}
+
+.dontwait p {
+position: absolute;
+left: 11.39%;
+right: 10.83%;
+top: 38.61%;
+bottom: 10.66%;
+font-family: 'Euclid Circular A';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+} 
+
+#trydemo {
+height: 48px;
+width: 280px;
+border-radius: 8px;
+padding: 2px 16px;
+position: absolute;
+left: 7.39%;
+right: 10.83%;
+top: 400px;
+bottom: 9.68%;
+color: #222B45;
+}
+
+#buy {
+position: absolute;
+left: 7.39%;
+right: 10.83%;
+top: 474px;
+bottom: 9.13%;
+padding: 12px;
+gap: 4px;
+width: 280px;
+height: 48px;
+background: #222B45;
+border-radius: 8px;
+}
+
+
+
+

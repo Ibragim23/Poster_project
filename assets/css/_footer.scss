@@ -1,0 +1,193 @@
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 4650px;
+    bottom: -0.25%;
+    background: #F7F9FC;
+    height: 404px;
+    }
+  
+    .fsPosterfooter {
+      display: flex;
+      flex-direction:column;
+      align-content: space-evenly;
+      gap: 15px;
+  }
+  
+  .fsPosterfooter > .logo {
+  position: absolute;
+  left: 7.78%;
+  right: 81.53%;
+  top: 14.14%;
+  bottom: 74.94%;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2E3A59;
+  height: 44px;
+  width: 194px;
+  }
+  
+  .logoDescription {
+  position: absolute;
+  left: 7.78%;
+  right: 77.78%;
+  top: 33%;
+  bottom: 49.13%;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+  }
+  
+  
+  .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  left: 7.78%;
+  top: 88.83%;
+  height: 24px;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+  }
+  
+  .company-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+  left: 29.44%;
+  top: 15.63%;
+  
+    list-style-type: none;
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2E3A59;
+  }
+  
+  .company-list h6 {
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #2E3A59;
+  
+  }
+  
+  .company-list a {
+    text-decoration: none;
+    color: #2E3A59;
+  
+  }
+  
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    left: 49.11%;
+    top: 15.63%;
+    bottom: 25.81%;
+    list-style-type: none;
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2E3A59;
+  }
+  
+  .product-list h6 {
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #2E3A59;
+  
+  }
+  
+  .product-list a {
+    text-decoration: none;
+    color: #2E3A59;
+  
+  }
+  
+  .contact h6 {
+  position: absolute;
+  left: 68.78%;
+  right: 21.67%;
+  top: 15.63%;
+  bottom: 77.42%;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2E3A59;
+  }
+  
+  .email {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  position: absolute;
+  left: 68.78%;
+  top: 41.54%;
+  bottom: 65.51%;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+  }
+  
+  .email > img {
+  height: 24px;
+  width: 24px;
+  border-radius: 0px;
+  }
+  
+  .media-list {
+    position: absolute;
+    left: 67.78%;
+    top: 58.4%;
+  }
+  
+  .privacy {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+    position: absolute;
+    height: 24px;
+    left: 860px;
+    top: 355px;
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2E3A59;
+  }
